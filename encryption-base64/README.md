@@ -16,4 +16,10 @@ BASE64Decoder两个类，我们只需要知道使用对应的方法即可。另�
 用来把任意序列的8位字节描述为一种不易被人直接识别的形式。（The Base64 Content-Transfer-Encoding  
 is designed to represent arbitrary sequences of octets in a form that need not be humanly  
 readable.） 常见于邮件、http加密，截取http信息，你就会发现登录操作的用户名、密码字段通过BASE64  
-加密的。  
+加密的。   
+
+算法的实现方式：
+===
+1.jdk实现：Oracle提供的默认的实现  
+2.Commons Codec实现  
+3.Bouncy Castle实现  
