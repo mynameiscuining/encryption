@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>encryption-base64</module>
+        <module>encryption-message-digest</module>
     </modules>
 <dependencies>
     <!-- https://mvnrepository.com/artifact/junit/junit -->
