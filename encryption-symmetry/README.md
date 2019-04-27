@@ -5,4 +5,9 @@
 对称的原理：   
 加密密钥 = 解密密钥，加密运算是解密运算的逆运算。   
 对称加密算法是初等的加密算法，从安全性上说，不是很高。  
-常用的对称加密算法:DES(3DES)，AES，PBE，IDEA等。  
+常用的对称加密算法:DES(3DES)，AES，PBE，IDEA等。 
+
+DES  
+===
+DES（Data Encryption Standard）：数据加密标准（已经被破解)  
+![Image text](https://img-blog.csdn.net/20150904094622248)  
