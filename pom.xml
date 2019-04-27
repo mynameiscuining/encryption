@@ -11,6 +11,8 @@
     <modules>
         <module>encryption-base64</module>
         <module>encryption-message-digest</module>
+        <module>encrypt</module>
+        <module>encryption-symmetry</module>
     </modules>
 <dependencies>
     <!-- https://mvnrepository.com/artifact/junit/junit -->
