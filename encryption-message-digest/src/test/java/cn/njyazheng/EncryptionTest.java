@@ -8,7 +8,7 @@ import cn.njyazheng.md.JDKMD5;
 import cn.njyazheng.sha.BouncyCastleSHA1;
 import cn.njyazheng.sha.CommonCodesSHA1;
 import cn.njyazheng.sha.JDKSHA1;
-import org.bouncycastle.util.encoders.Hex;
+import org.apache.commons.codec.binary.Base64;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -45,5 +45,9 @@ public class EncryptionTest {
         byte[] bytes=JDKHMACMD5.getKey();
         System.out.println("JDKHMACMD5加密后:"+JDKHMACMD5.encrypt(SOURCE,bytes));
         System.out.println("BouncyCastleHMACMD5加密后:"+BouncyCastleHMACMD5.encrypt(SOURCE,bytes));
+    }
+    @Test
+    public void key() throws NoSuchAlgorithmException {
+        System.out.println(Base64.encodeBase64String(JDKHMACMD5.getKey()));
     }
 }

@@ -10,4 +10,11 @@
 DES  
 ===
 DES（Data Encryption Standard）：数据加密标准（已经被破解)  
-![Image text](https://img-blog.csdn.net/20150904094622248)  
+![Image text](https://raw.githubusercontent.com/mynameiscuining/encryption/master/encryption-symmetry/symmetry-des.jpg)    
+
+3DES
+===
+**3重DES的好处：**   
+1. 密钥长度增强   
+2. 迭代次数提高  
+![Image text](https://raw.githubusercontent.com/mynameiscuining/encryption/master/encryption-symmetry/symmetry-des.jpg)   
