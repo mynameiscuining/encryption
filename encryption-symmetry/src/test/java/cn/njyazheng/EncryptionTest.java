@@ -1,5 +1,7 @@
 package cn.njyazheng;
 
+import cn.njyazheng.aes.BouncyCastleAES;
+import cn.njyazheng.aes.JDKAES;
 import cn.njyazheng.des.BouncyCastleDES;
 import cn.njyazheng.des.JDKDES;
 
@@ -75,5 +77,21 @@ public class EncryptionTest {
         String target = BouncyCastle3DES.encrypt(SOURCE,bytes);
         System.out.println("BouncyCastle3DES加密之后为:" + target);
         System.out.println("JDK3DES解密之后为:" + JDK3DES.decrypt(target,bytes));
+    }
+
+    @Test
+    public void JDKAES() throws Exception {
+        byte[] bytes=JDKAES.getKey();
+        String target = JDKAES.encrypt(SOURCE,bytes);
+        System.out.println("JDKAES加密之后为:" + target);
+        System.out.println("JDKAES解密之后为:" + JDKAES.decrypt(target,bytes));
+    }
+
+    @Test
+    public void BouncyCastleAES() throws Exception {
+        byte[] bytes=BouncyCastleAES.getKey();
+        String target = BouncyCastleAES.encrypt(SOURCE,bytes);
+        System.out.println("BouncyCastleAES加密之后为:" + target);
+        System.out.println("BouncyCastleAES解密之后为:" + BouncyCastleAES.decrypt(target,bytes));
     }
 }
