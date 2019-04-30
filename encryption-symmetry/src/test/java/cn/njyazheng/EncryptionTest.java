@@ -7,6 +7,7 @@ import cn.njyazheng.des.JDKDES;
 
 import cn.njyazheng.desede.BouncyCastle3DES;
 import cn.njyazheng.desede.JDK3DES;
+import cn.njyazheng.pbe.JDKPBE;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -93,5 +94,13 @@ public class EncryptionTest {
         String target = BouncyCastleAES.encrypt(SOURCE,bytes);
         System.out.println("BouncyCastleAES加密之后为:" + target);
         System.out.println("BouncyCastleAES解密之后为:" + BouncyCastleAES.decrypt(target,bytes));
+    }
+
+    @Test
+    public void JDKPBE() throws Exception {
+        byte[] bytes=JDKPBE.getSalt();
+        String target = JDKPBE.encrypt(SOURCE,"kouling",bytes,50);
+        System.out.println("JDKPBE加密之后为:" + target);
+        System.out.println("JDKPBE解密之后为:" + JDKPBE.decrypt(target,"kouling",bytes,50));
     }
 }
