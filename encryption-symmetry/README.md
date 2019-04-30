@@ -39,7 +39,7 @@ PBE(Password Based Encryption)：基于口令的加密
 口令是用户自己输入的，但通常口令不会很复杂。同时为了防止穷举的方式破解口令，还要对口令进行加盐（也就是在口令中加入随机数）。  
 PBE算法实际上就是，采用口令替代了之前对称加密算法中生成的KEY  
 ![Image text](https://raw.githubusercontent.com/mynameiscuining/encryption/master/encryption-symmetry/symmetry-pbe1.jpg)  
-![Image text](https://raw.githubusercontent.com/mynameiscuining/encryption/master/encryption-symmetry/symmetry-pbe4.jpg)
+![Image text](https://raw.githubusercontent.com/mynameiscuining/encryption/master/encryption-symmetry/symmetry-pbe2.jpg)
 ![Image text](https://raw.githubusercontent.com/mynameiscuining/encryption/master/encryption-symmetry/symmetry-pbe3.jpg)
 
 
