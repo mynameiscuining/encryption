@@ -1,4 +1,5 @@
 package cn.njyazheng;
+import cn.njyazheng.dsa.JDKDSA;
 import cn.njyazheng.rsa.JDKRSA;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,6 +23,18 @@ public class EncryptionTest {
         String target=jdkrsa.signature(SOURCE);
         System.out.println("JDKRSA签名:"+target);
         System.out.println("JDKRSA认证:"+jdkrsa.auth(SOURCE,target));
+    }
+    
+    @Test
+    public void DAS() throws Exception {
+        //初始化密钥对
+        JDKDSA jdkdsa=new JDKDSA();
+        jdkdsa.setKeys();
+        System.out.println("公钥:"+jdkdsa.getPublic_key());
+        System.out.println("私钥:"+jdkdsa.getPrivate_key());
+        String target=jdkdsa.signature(SOURCE);
+        System.out.println("JDKDSA签名:"+target);
+        System.out.println("JDKDSA认证:"+jdkdsa.auth(SOURCE,target));
     }
    
 }

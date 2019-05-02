@@ -17,3 +17,17 @@ RSA
 RSA数字签名算法的密钥实现与RSA的加密算法是一样的，算法的名称都叫RSA。密钥的产生和转换都是一样的。  
 RSA数字签名算法主要包括MD和SHA两类。  
 ![Image text](https://raw.githubusercontent.com/mynameiscuining/encryption/master/encryption-digital-signature/rsa.jpg)  
+
+DSA
+===
+**介绍：**   
+DSS(Digital Signature Standard)：数字签名标准   
+在DSS的基础上逐渐形成了DSA算法。   
+DSA(Digital Signature Algorithm)：数字签名算法  
+
+**DSA与RSA的区别：**   
+DSA仅包含数字签名，使用DSA这种算法的证书是没法进行加密通信的。   
+但是RSA既包含数字签名算法，也包含加解密。  
+![Image text](https://raw.githubusercontent.com/mynameiscuining/encryption/master/encryption-digital-signature/dsa.jpg)  
+
+
