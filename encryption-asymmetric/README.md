@@ -59,3 +59,12 @@ static keyAgreement getInstance(String algorithm,Provider provider)
 **加解密涉及到的类：**   
 Cipher  
 
+RSA
+===
+唯一广泛接受并实现的非对称加密的算法。   
+可以实现数据加密和数字签名。   
+提供了：   
+1. 公钥加密，私钥解密   
+2. 私钥加密，公钥解密   
+![Image text](https://raw.githubusercontent.com/mynameiscuining/encryption/master/encryption-asymmetric/asymmetric-rsa.jpg)
+
