@@ -13,6 +13,7 @@
         <module>encryption-message-digest</module>
         <module>encryption-symmetry</module>
         <module>encryption-asymmetric</module>
+        <module>encryption-digital-signature</module>
     </modules>
 <dependencies>
     <!-- https://mvnrepository.com/artifact/junit/junit -->
