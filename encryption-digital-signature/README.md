@@ -30,4 +30,15 @@ DSA仅包含数字签名，使用DSA这种算法的证书是没法进行加密�
 但是RSA既包含数字签名算法，也包含加解密。  
 ![Image text](https://raw.githubusercontent.com/mynameiscuining/encryption/master/encryption-digital-signature/dsa.jpg)  
 
+ECDSA
+=== 
+**介绍：**    
+微软产品的序列号验证算法使用的就是ECDSA。  
+ECDSA(Elliptic Curve Digital Signature Algorithm)：椭圆曲线数字签名算法  
+优点：   
+与传统的数字签名算法相比，速度快，强度高，签名短。 
+用java的jdk里面相关方法实现ECDSA的签名及签名验证,要jdk7.x以上，ECDSA：椭圆曲线数字签名算法   
+![Image text](https://raw.githubusercontent.com/mynameiscuining/encryption/master/encryption-digital-signature/ecddsa.jpg)  
+
+
 
